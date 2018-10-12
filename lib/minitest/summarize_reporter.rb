@@ -3,23 +3,22 @@ module Minitest
   # Define our custom reporter.
   class SummarizeReporter < Minitest::StatisticsReporter
     SUMMARY_LABELS = {
-      'S' => 'Skipped:',
       '.' => 'Passed:',
       'F' => 'Failed',
-      'E' => 'Error:'
+      'E' => 'Error:',
+      'S' => 'Skipped:'
     }.freeze
 
-    RESULT_CODE_TO_COLOR = {
-      'S' => :yellow,
+    CODE_TO_COLOR = {
       '.' => :green,
       'F' => :red,
-      'E' => :red
+      'E' => :red,
+      'S' => :blue
     }.freeze
 
     COLOR_CODE = {
       red:    31,
       green:  32,
-      yellow: 33,
       blue:   34,
       none:   0
     }.freeze
@@ -108,7 +107,7 @@ module Minitest
     end
 
     def colorize_by_key(key, str)
-      code = RESULT_CODE_TO_COLOR[key]
+      code = CODE_TO_COLOR[key]
 
       colorize(code, str)
     end
