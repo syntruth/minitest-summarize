@@ -6,7 +6,7 @@ really dive into how the tests are run and so forth.
 The source for Minitest is **_really_** easy to read and understand.
 
 However, even despite some of my favorite output plugins making things nice,
-the one thing I got tired of was the long line of dots (or [emoji](1)!) so I
+the one thing I got tired of was the long line of dots (or [emoji][1]!) so I
 decided to fix it.
 
 Thus, this Minitest plugin.
@@ -63,4 +63,4 @@ Minitest::Summarize.no_color!
 
 MIT.
 
-1: <https://github.com/tenderlove/minitest-emoji>
+[1]: <https://github.com/tenderlove/minitest-emoji>
