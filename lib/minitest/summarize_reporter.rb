@@ -82,7 +82,7 @@ module Minitest
         color = result.skipped? ? :yellow : :red
         text  = format("\n%3d) %s", idx + 1, result)
 
-        colorize(color, text)
+        self.class.color? ? colorize(color, text) : text
       end.join + "\n"
     end
 

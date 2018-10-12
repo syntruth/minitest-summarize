@@ -2,6 +2,7 @@ Gem::Specification.new do |s|
   s.name        = 'minitest-summarize'
   s.version     = '0.0.1'
   s.authors     = 'Randy Carnahan'
+  s.homepage    = 'https://github.com/syntruth/minitest-summarize'
   s.licenses    = ['MIT']
   s.date        = '2018-10-12'
   s.summary     = 'Minitest Summarize Reporter'
