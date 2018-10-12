@@ -33,9 +33,9 @@ Then, when your tests are run, it'll display a summary before the results long
 form results:
 
 ```text
-[Skipped: 1] [Passed: 30] [Failed 2] [Error: 0]
+[Passed: 30] [Failed 2] [Error: 0] [Skipped: 1]
 
-Finished in 0.002814s, 11728.0541 runs/s, 11372.6586 assertions/s.
+Finished in 0.002721s, 12129.5569 runs/s, 11761.9946 assertions/s.
 
   1) Failure:
 do some tests#test_0031_has some fails [/Users/rcarnahan/repos/minitest-summarize/spec/main_spec.rb:14]:
