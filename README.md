@@ -18,7 +18,7 @@ instead update a summary of the results, in color unless told not to use color.
 
 ## Install
 
-```
+```sh
 gem install minitest-summarize
 ```
 
@@ -32,7 +32,7 @@ require 'minitest/summarize'
 Then, when your tests are run, it'll display a summary before the results long
 form results:
 
-```
+```sh
 [Skipped: 1] [Passed: 30] [Failed 2] [Error: 0]
 
 Finished in 0.002814s, 11728.0541 runs/s, 11372.6586 assertions/s.
@@ -62,6 +62,5 @@ Minitest::Summarize.no_color!
 ## License
 
 MIT.
-
 
 1: <https://github.com/tenderlove/minitest-emoji>
