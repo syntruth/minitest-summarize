@@ -34,7 +34,7 @@ module Minitest
     end
 
     def self.color?
-      @color ||= true
+      @color
     end
 
     def initialize(io)
@@ -43,6 +43,7 @@ module Minitest
       @io          = io
       @summary     = {}
       @last_length = 0
+      @color       = true
 
       SUMMARY_LABELS.keys.each { |key| @summary[key] = 0 }
     end
